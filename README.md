@@ -1,17 +1,12 @@
-# Docusaurus Example
+# Onyxian Wiki
 
-This directory is a brief example of a [Docusaurus](https://v2.docusaurus.io) site that can be deployed with Vercel and zero configuration.
+The documentation hub for all Spigot plugins by Onyxiansoul
 
-## Deploy Your Own
+## See the plugins at
 
-Deploy your own Docusaurus project with Vercel.
+https://www.spigotmc.org/members/onyxiansoul.667504/
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/master/docusaurus-2)
 
-### How We Created This Example
+## Visit the wiki at
 
-To get started with Docusaurus on Vercel, you can use the [Docusaurus CLI](https://v2.docusaurus.io/docs/installation#scaffold-project-website) to initialize the project:
-
-```shell
-$ npx @docusaurus/init@next init my-website classic
-```
+https://onyxianwiki.vercel.app/
