@@ -1,16 +1,16 @@
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
+  title: 'Onyxian Wiki',
+  tagline: 'The documentation hub for plugins by Onyxian Soul',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'onyxiansoul', // Usually your GitHub org/user name.
+  projectName: 'onyxianwiki', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Onyxian Wiki',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'Onyxian Wiki Logo',
         src: 'img/logo.svg',
       },
       links: [
