@@ -1,9 +1,9 @@
 module.exports = {
   title: 'Onyxian Wiki',
-  tagline: 'The documentation hub for plugins by Onyxian Soul',
+  tagline: 'The documentation hub for plugins by OnyxianSoul',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'onyxiansoul', // Usually your GitHub org/user name.
   projectName: 'onyxianwiki', // Usually your repo name.
   themeConfig: {
@@ -11,7 +11,7 @@ module.exports = {
       title: 'Onyxian Wiki',
       logo: {
         alt: 'Onyxian Wiki Logo',
-        src: 'img/logo.svg',
+        src: 'img/favicon.svg', //Antes era un archivo separado pero no hace falta en mi caso me parece.
       },
       links: [
         {
