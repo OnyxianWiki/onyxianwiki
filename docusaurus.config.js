@@ -17,13 +17,6 @@ module.exports = {
         src: 'img/favicon.png', //Antes era un archivo separado pero no hace falta en mi caso me parece.
       },
       items: [
-        // {
-        //   to: 'docs/doc1',
-        //   activeBasePath: 'docs',
-        //   label: 'Docs',
-        //   position: 'left',
-        // },
-        // {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://www.spigotmc.org/members/onyxiansoul.667504/',
           label: 'Spigot',
@@ -33,51 +26,6 @@ module.exports = {
     },
     footer: {
       style: 'dark',
-      // links: [
-      //   {
-      //     title: 'Docs',
-      //     items: [
-      //       {
-      //         label: 'Style Guide',
-      //         to: 'docs/doc1',
-      //       },
-      //       {
-      //         label: 'Second Doc',
-      //         to: 'docs/doc2',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'Community',
-      //     items: [
-      //       {
-      //         label: 'Stack Overflow',
-      //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-      //       },
-      //       {
-      //         label: 'Discord',
-      //         href: 'https://discordapp.com/invite/docusaurus',
-      //       },
-      //       {
-      //         label: 'Twitter',
-      //         href: 'https://twitter.com/docusaurus',
-      //       },
-      //     ],
-      //   },
-      //   {
-      //     title: 'More',
-      //     items: [
-      //       {
-      //         label: 'Blog',
-      //         to: 'blog',
-      //       },
-      //       {
-      //         label: 'GitHub',
-      //         href: 'https://github.com/facebook/docusaurus',
-      //       },
-      //     ],
-      //   },
-      // ],
       copyright: `Copyright © OnyxianSoul ${new Date().getFullYear()}`,
     },
   },
@@ -98,6 +46,7 @@ module.exports = {
 
         docs: { //Se le va pasar a la config docs plugin
           sidebarPath: require.resolve('./sidebars.js'),
+          hideableSidebar: true,
           /**donde editar my source */
           editUrl: 'https://github.com/OnyxianWiki/onyxianwiki/tree/master/website', 
           /** URL route for the docs section of your site.

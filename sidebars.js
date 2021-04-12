@@ -1,9 +1,10 @@
-//Lista todas las side bars de la isquierda
+//https://docusaurus.io/docs/sidebar#hideable-sidebar
 
 const pluginsBar = [
   {//El item principal
     type: 'category', //Tipo de item
     label: 'Plugins', //Nombre con el que aparece al costado
+    collapsed: true, //Si aparece colapasada por defualt (creo que se aplica solo a cateogries)
     items: [ //Sub items
       {
         type: 'link',
@@ -34,6 +35,7 @@ const onyxianCoreBar = [
   },
 ];
 
+//Lista todas las side bars de la isquierda
 module.exports = {
   onyxianCoreBar,
   pluginsBar

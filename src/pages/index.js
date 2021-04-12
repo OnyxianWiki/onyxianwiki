@@ -75,7 +75,7 @@ function Home() {
      </div>
    </header>
 
-   <main>
+   <main className=" text--center">
      {plugins && plugins.length && (
        <section className={styles.features}>
          <div className="container">
