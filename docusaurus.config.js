@@ -1,3 +1,4 @@
+//El archivo de configuración de docusaurus, adentro tiene el theme config
 module.exports = {
   title: 'Onyxian Wiki',
   tagline: 'The documentation hub for plugins by OnyxianSoul',
@@ -6,14 +7,16 @@ module.exports = {
   favicon: 'img/favicon.png',
   organizationName: 'onyxiansoul', // Usually your GitHub org/user name.
   projectName: 'onyxianwiki', // Usually your repo name.
+  //La configuración del docusaurus theme
   themeConfig: {
+    //La barra de arriba
     navbar: {
       title: 'Onyxian Wiki',
       logo: {
         alt: 'Onyxian Wiki Logo',
         src: 'img/favicon.png', //Antes era un archivo separado pero no hace falta en mi caso me parece.
       },
-      links: [
+      items: [
         // {
         //   to: 'docs/doc1',
         //   activeBasePath: 'docs',
@@ -80,22 +83,38 @@ module.exports = {
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      '@docusaurus/preset-classic',//La configuración del preset clasico que viene con 
+      /*@docusaurus/theme-classic,
+        @docusaurus/theme-search-algolia,
+      	@docusaurus/plugin-content-docs,
+        @docusaurus/plugin-content-blog,
+        @docusaurus/plugin-content-pages,
+        @docusaurus/plugin-debug,
+        @docusaurus/plugin-google-analytics,
+        @docusaurus/plugin-google-gtag,
+        @docusaurus/plugin-sitemap*/
       {
-        docs: {
+        debug: undefined, // Debug defaults to true in dev, false in prod
+
+        docs: { //Se le va pasar a la config docs plugin
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          /**donde editar my source */
+          editUrl: 'https://github.com/OnyxianWiki/onyxianwiki/tree/master/website', 
+          /** URL route for the docs section of your site.
+          * *DO NOT* include a trailing slash.
+          * INFO: It is possible to set just `/` for shipping docs without base path. */
+          routeBasePath: '/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+        // Will be passed to @docusaurus/plugin-content-blog (false to disable)
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   editUrl:
+        //     'https://github.com/OnyxianWiki/onyxianwiki/tree/master',
+        // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+          
         },
       },
     ],

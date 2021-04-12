@@ -17,9 +17,48 @@
   --ifm-code-font-size: 95%;
 }
 
+.navbar {
+  background: lightblue;
+  background-image: url("../../static/img/header.png"); /*todo: optimizarla */
+  /**Borde isquierdo, largo, borde derecho, color (red, green, blue, alpha)*/
+  filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15));
+}
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.main-wrapper {
+  background-color: aquamarine;
+  background-image: url("../../static/img/header.png");
+  background-size: cover;
+  padding-top: 0px;
+  margin-top: 0px;
+  display: flex;
+}
+
+.container--fluid {
+  background-color: white;
+  /* display: flex; */
+  flex-grow: 1;
+}
+
+.footer {
+  background: lightblue;
+  background-image: url("../../static/img/footer.png"); /*todo: optimizarla */
+  /**Borde isquierdo, largo, borde derecho, color (red, green, blue, alpha)*/
+  filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15));
+  padding: calc(var(--ifm-spacing-vertical) * 0.5);
+}
+
+/*Sacados porque editar el documento es mas preciso, on se sabe si esto se usa para otra cosa.*/
+/* .padding-vert--lg {
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+.margin-vert--lg {
+  margin-bottom: 0px !important;
+  margin-top: 0px !important;
+} */

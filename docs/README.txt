@@ -1,0 +1,1 @@
+A pesar de sus shortcomings, es necesario usar la carpeta docs (al menos por ahora) ya que agrega el edit button y permite usar sidebars
