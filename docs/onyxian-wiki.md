@@ -8,7 +8,7 @@ sidebar_label: Onyxian Wiki
 # <center>Chose a plugin to learn about it!</center>
 
 <div class="text--center">
-<center><a href='./DamagePotionEffects/damage-potion-effects-landing-page'>
+<center><a href='./DamagePotionEffects/damage-potion-effects'>
 <img src="https://dl.dropbox.com/s/yuu42ooixgfudt2/DamagePotionEffects.png?" alt="Damage Potion Effects Spigot Plugin"/>
 </a></center>
 </div>
