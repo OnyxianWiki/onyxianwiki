@@ -64,7 +64,7 @@ function Home() {
   const {siteConfig = {}} = context;
   return (//layout no aparece
 
- <Layout title={`${siteConfig.title}`} description="Documentation for OnyxianSoul's Spigot Plugins." wrapperClassName="centeredInDiv" >
+ <Layout title={`${siteConfig.title}`} description="Documentation for OnyxianSoul's Spigot Plugins." wrapperClassName="centeredInDiv cloudyBackground" >
    <div className="centerContent">
    <header>
      <div className="container centeredInDiv text--center">

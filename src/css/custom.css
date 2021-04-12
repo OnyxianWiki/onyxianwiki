@@ -54,6 +54,10 @@
   flex-grow: 1;
 }
 
+.cloudyBackground {
+  background-image: url("../../static/img/header.png");
+}
+
 .centeredInDiv {
   justify-content: center;
 }
