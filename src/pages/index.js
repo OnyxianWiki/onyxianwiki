@@ -6,46 +6,51 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
-const features = [
+const plugins = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
-    description: (
+    title: <>Damage Potion Effects</>,
+    imagePath: 'img/logos/DamagePotionEffects.png',
+    description:(
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+      Increase your server depth, make damage have consequences!
+      Apply potion effects to mob attacks, physics or any damage source! Super customizable!
       </>
     ),
+    targetUrl: '../../DamagePotionEffects/damage-potion-effects',
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
-    description: (
+    title: <>Send Console Message</>,
+    imagePath: 'img/logos/SendConsoleMessage.png',
+    description:(
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+      Send console messages, with prefixes and colors!
+      Combine with others to do informative and beautiful logging!
       </>
     ),
+    targetUrl: '../../docs/SendConsoleMessage/send-console-message',
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
+    title: <>Fall Event API</>,
+    imagePath: 'img/logos/FallEventAPI.png',
+    description:(
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+      Ever wanted to listen to a player fall? I know I did!
+      Get this API and jump straight to developing with Player Fall Events!
       </>
     ),
+    targetUrl: 'https://www.spigotmc.org/resources/playerfalleventapi.86251/'
   },
 ];
 
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
+function Feature({imagePath, title, description, targetUrl}) {
+  const imgUrl = useBaseUrl(imagePath);
   return (
     <div className={classnames('col col--4', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
+          <a href= {targetUrl}>
+            <img className={styles.featureImage} src={imgUrl} alt={title} />
+          </a>
         </div>
       )}
       <h3>{title}</h3>
@@ -57,40 +62,34 @@ function Feature({imageUrl, title, description}) {
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
-  return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="Documentation for OnyxianSoul's Spigot Plugins.">
-      <header className={classnames('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={classnames(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('plugins')}>
-              Get Started
-            </Link>
-          </div>
-        </div>
-      </header>
-      <main>
-        {features && features.length && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
-            </div>
-          </section>
-        )}
-      </main>
-    </Layout>
+  return (//layout no aparece
+
+ <Layout title={`${siteConfig.title}`} description="Documentation for OnyxianSoul's Spigot Plugins." wrapperClassName="centeredInDiv" >
+   <div className="centerContent">
+   <header>
+     <div className="container centeredInDiv text--center">
+       <h1 className="hero__title">{siteConfig.title}</h1>
+       <p className="hero__subtitle">{siteConfig.tagline}</p>
+       <br/>
+       <h2>Click on a plugin to begin!</h2>
+     </div>
+   </header>
+
+   <main>
+     {plugins && plugins.length && (
+       <section className={styles.features}>
+         <div className="container">
+           <div className="row">
+             {plugins.map((props, idx) => (
+               <Feature key={idx} {...props} />
+             ))}
+           </div>
+         </div>
+       </section>
+     )}
+   </main>
+   </div>
+ </Layout>
   );
 }
 

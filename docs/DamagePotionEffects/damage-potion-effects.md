@@ -1,7 +1,7 @@
 ---
-id: damage-potion-effects-landing-page
-title: Damage Potion Effects Landing Page
-sidebar_label: Damage Potion Effects Landing Page
+id: damage-potion-effects
+title: Damage Potion Effects
+sidebar_label: Damage Potion Effects
 ---
 
 <!-- No hace falta poner el titulo aca, porque automaticamente se incluye. -->

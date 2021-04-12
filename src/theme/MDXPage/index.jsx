@@ -22,7 +22,7 @@ function MDXPage(props){
       description={description}
       permalink={permalink}
       wrapperClassName={wrapperClassName}>
-      {/* <main> */}
+      <main>
         <div className="container container--fluid awesome">
           <div className="padding-vert--lg">
           {/* <div className="margin-vert--lg padding-vert--lg"> */}
@@ -42,7 +42,7 @@ function MDXPage(props){
             </div>
           </div>
         </div>
-      {/* </main> */}
+      </main>
     </Layout>
   );
 }

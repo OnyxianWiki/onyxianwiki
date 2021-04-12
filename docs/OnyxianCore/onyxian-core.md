@@ -1,7 +1,7 @@
 ---
-id: onyxian-core-landing-page
-title: Onyxian Core Landing Page
-sidebar_label: Onyxian Core Landing Page
+id: onyxian-core
+title: Onyxian Core
+sidebar_label: Onyxian Core
 ---
 
 <!-- No hace falta poner el titulo aca, porque automaticamente se incluye. -->

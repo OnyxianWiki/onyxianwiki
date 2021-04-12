@@ -1,8 +1,8 @@
 ---
-id: general-landing-page
-title: General Landing Page
+id: onyxian-wiki
+title: Onyxian Wiki
 hide_title: true
-sidebar_label: General Landing Page
+sidebar_label: Onyxian Wiki
 ---
 
 # <center>Chose a plugin to learn about it!</center>

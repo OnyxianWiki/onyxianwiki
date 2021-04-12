@@ -1,50 +1,81 @@
 //Lista todas las side bars de la isquierda
 
-const coreSideBar = [
-  {//El item principal
-    type: 'category', //Tipo de item
-    label: 'OnyxianCore', //Nombre con el que aparece al costado
-    items: [ //Sub items
-      'OnyxianCore/onyxian-core-landing-page', //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'doc1'}
-    ],
-  },
-];
-
-const pluginsSideBar = [
+const pluginsBar = [
   {//El item principal
     type: 'category', //Tipo de item
     label: 'Plugins', //Nombre con el que aparece al costado
     items: [ //Sub items
-      'general-landing-page', //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'doc1'}
+      {
+        type: 'link',
+        label: 'Onyxian Core',
+        href: 'OnyxianCore/onyxian-core',
+      },
+      {
+        type: 'link',
+        label: 'Damage Potion Effects',
+        href: 'DamagePotionEffects/damage-potion-effects',
+      },
+      {
+        type: 'link',
+        label: 'Send Console Message',
+        href: 'SendConsoleMessage/send-console-message',
+      },
+    ],
+  },
+];
+
+const onyxianCoreBar = [
+  {//El item principal
+    type: 'category', //Tipo de item
+    label: 'OnyxianCore', //Nombre con el que aparece al costado
+    items: [ //Sub items
+      'OnyxianCore/onyxian-core', //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'doc1'}
     ],
   },
 ];
 
 module.exports = {
-  coreSideBar,
+  onyxianCoreBar,
+  pluginsBar
+  // coreSideBar,
   // pluginsSideBar,
-  damagepotioneffectsbar:
-    [
-      {//El item principal
-        type: 'category', //Tipo de item
-        label: 'damagepotioneffectsbar', //Nombre con el que aparece al costado
-        items: [ //Sub items
-          'DamagePotionEffects/damage-potion-effects-landing-page', //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'DamagePotionEffects/damage-potion-effects-landing-page'}
-        ],
-      },
-    ],
-  sendconsolemessagebar:
-  [
-    {//El item principal
-      type: 'category', //Tipo de item
-      label: 'sendconsolemessagebar', //Nombre con el que aparece al costado
-      items: [ //Sub items
-        'SendConsoleMessage/send-console-message-landing-page', //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'DamagePotionEffects/damage-potion-effects-landing-page'}
-      ],
-    },
-  ],
+  // damagepotioneffectsbar:
+  // [
+  //   // {//El item principal
+  //   //   type: 'category', //Tipo de item
+  //   //   label: 'Damage Potion Effects', //Nombre con el que aparece al costado
+  //   //   items: [ //Sub items
+  //   //     'DamagePotionEffects/damage-potion-effects',
+  //   //     pluginsBar,
+  //   //     // {pluginsSideBar: pluginsBar},
+  //   //     {
+  //   //       type: 'link',
+  //   //       label: 'Landing page',
+  //   //       href: 'DamagePotionEffects/damage-potion-effects',
+  //   //     }
+  //   //     // {type: 'doc', id:'Landing Page', items:['DamagePotionEffects/damage-potion-effects']},
+  //   //       //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'DamagePotionEffects/damage-potion-effects'}
+  //   //   ],
+  //   // },
+  //   onyxianCoreBar,
+  //   pluginsBar,
+  // ],
+  // sendconsolemessagebar:
+  // [
+  //   {//El item principal
+  //     type: 'category', //Tipo de item
+  //     label: 'Send Console Message', //Nombre con el que aparece al costado
+  //     items: [ //Sub items
+  //       'SendConsoleMessage/send-console-message', //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'DamagePotionEffects/damage-potion-effects'}
+  //     ],
+  //   },
+  // ],
 };
 
+// {
+//   type: 'ref',
+//   id: 'OnyxianCore/onyxian-core', // Document id (string).
+// },
 
 
 
@@ -82,7 +113,7 @@ module.exports = {
 //       type: 'category', //Tipo de item
 //       label: 'Guides', //Nombre con el que aparece al costado
 //       items: [ //Sub items
-//         'OnyxianCore/onyxian-core-landing-page', //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'doc1'}
+//         'OnyxianCore/onyxian-core', //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'doc1'}
 //         {
 //           Docs: ['StyleGuide', 'doc2', 'doc3', 'mdx'],
 //         },
