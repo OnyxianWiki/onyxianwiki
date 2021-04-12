@@ -1,7 +1,7 @@
 ---
 id: onyxian-core
 title: Onyxian Core
-sidebar_label: Onyxian Core
+sidebar_label: Home
 ---
 
 <!-- No hace falta poner el titulo aca, porque automaticamente se incluye. -->

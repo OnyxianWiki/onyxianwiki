@@ -46,7 +46,6 @@ module.exports = {
 
         docs: { //Se le va pasar a la config docs plugin
           sidebarPath: require.resolve('./sidebars.js'),
-          hideableSidebar: true,
           /**donde editar my source */
           editUrl: 'https://github.com/OnyxianWiki/onyxianwiki/tree/master/website', 
           /** URL route for the docs section of your site.
@@ -63,7 +62,7 @@ module.exports = {
         // },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-          
+          hideableSidebar: true
         },
       },
     ],

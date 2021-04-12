@@ -1,7 +1,7 @@
 ---
 id: send-console-message
 title: Send Console Message
-sidebar_label: Send Console Message
+sidebar_label: Home
 ---
 
 <!-- No hace falta poner el titulo aca, porque automaticamente se incluye. -->

@@ -1,44 +1,62 @@
 //https://docusaurus.io/docs/sidebar#hideable-sidebar
 
-const pluginsBar = [
-  {//El item principal
-    type: 'category', //Tipo de item
-    label: 'Plugins', //Nombre con el que aparece al costado
-    collapsed: true, //Si aparece colapasada por defualt (creo que se aplica solo a cateogries)
-    items: [ //Sub items
-      {
-        type: 'link',
-        label: 'Onyxian Core',
-        href: 'OnyxianCore/onyxian-core',
-      },
-      {
-        type: 'link',
-        label: 'Damage Potion Effects',
-        href: 'DamagePotionEffects/damage-potion-effects',
-      },
-      {
-        type: 'link',
-        label: 'Send Console Message',
-        href: 'SendConsoleMessage/send-console-message',
-      },
-    ],
+ const Plugins = [
+  //El item principal
+  //     // type: 'category', //Tipo de item
+  //     // label: 'Plugins', //Nombre con el que aparece al costado
+  //     // collapsed: true, //Si aparece colapasada por defualt (creo que se aplica solo a cateogries)
+  {
+    type: 'link',
+    label: 'Onyxian Core',
+    href: 'OnyxianCore/onyxian-core',
+  },
+  {
+    type: 'link',
+    label: 'Damage Potion Effects',
+    href: 'DamagePotionEffects/damage-potion-effects',
+  },
+  {
+    type: 'link',
+    label: 'Send Console Message',
+    href: 'SendConsoleMessage/send-console-message',
   },
 ];
 
-const onyxianCoreBar = [
+
+ const OnyxianCore = [ //El nombre de la var es el nombre de la barra también!
+  'OnyxianCore/onyxian-core',
+  ];
+
+
+
+const damagepotioneffectsbar = [
   {//El item principal
-    type: 'category', //Tipo de item
-    label: 'OnyxianCore', //Nombre con el que aparece al costado
-    items: [ //Sub items
-      'OnyxianCore/onyxian-core', //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'doc1'}
-    ],
+   type: 'category', //Tipo de item
+   label: 'Damage Potion Effects', //Nombre con el que aparece al costado
+   items: [ //Sub items
+     'DamagePotionEffects/damage-potion-effects',
+    //  pluginsBar,
+     // {pluginsSideBar: pluginsBar},
+    //  {
+    //    type: 'link',
+    //    label: 'Landing page',
+    //    href: 'DamagePotionEffects/damage-potion-effects',
+    //  }
+     // {type: 'doc', id:'Landing Page', items:['DamagePotionEffects/damage-potion-effects']},
+       //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'DamagePotionEffects/damage-potion-effects'}
+    ]
   },
-];
+  {OnyxianCore},
+  {Plugins},
+  ]
+
+  // ],
 
 //Lista todas las side bars de la isquierda
-module.exports = {
-  onyxianCoreBar,
-  pluginsBar
+module.exports = [
+  OnyxianCore,
+  Plugins,
+  damagepotioneffectsbar,
   // coreSideBar,
   // pluginsSideBar,
   // damagepotioneffectsbar:
@@ -72,7 +90,7 @@ module.exports = {
   //     ],
   //   },
   // ],
-};
+];
 
 // {
 //   type: 'ref',
