@@ -7,14 +7,14 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  /* --ifm-color-primary: #25c2a0; */
+  /* lo hice asi: https://docusaurus.io/docs/styling-layout */
   --ifm-color-primary: #0087e0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary-dark: #0079ca;
+  --ifm-color-primary-darker: #0073be;
+  --ifm-color-primary-darkest: #005e9d;
+  --ifm-color-primary-light: #0094f6;
+  --ifm-color-primary-lighter: #039bff;
+  --ifm-color-primary-lightest: #24a8ff;
   --ifm-font-size-base: 125%;
   --ifm-code-font-size: 95%;
   --ifm-h1-font-size: 2rem;
@@ -24,6 +24,16 @@
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
 }
+
+html[data-theme="dark"] {
+  --ifm-background-color: #1e2125;
+  --ifm-background-surface-color: #121212;
+}
+
+/*No funciono!*/
+/* [data-theme="dark"] :root {
+  --ifm-color-primary: #e2c102;
+} */
 
 .navbar {
   background: lightblue;
