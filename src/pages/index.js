@@ -6,6 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
+//Creo que sacaria el de la gema cool sola, el veerde agua
+
 const plugins = [
   {
     title: <>Damage Potion Effects</>,
@@ -72,37 +74,7 @@ const plugins = [
   },
   {
     title: <>OnyxianCore</>,
-    imagePath: 'img/logos/2b.png',
-    description:(
-      <>
-      The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/2c.png',
-    description:(
-      <>
-      The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
     imagePath: 'img/logos/2d.png',
-    description:(
-      <>
-      The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/3.png',
     description:(
       <>
       The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
@@ -122,37 +94,7 @@ const plugins = [
   },
   {
     title: <>OnyxianCore</>,
-    imagePath: 'img/logos/4b.png',
-    description:(
-      <>
-      The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/5a.png',
-    description:(
-      <>
-      The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/5b.png',
-    description:(
-      <>
-      The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/7a.png',
+    imagePath: 'img/logos/5c.png',
     description:(
       <>
       The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
@@ -192,27 +134,7 @@ const plugins = [
   },
   {
     title: <>OnyxianCore</>,
-    imagePath: 'img/logos/7e.png',
-    description:(
-      <>
-      The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
     imagePath: 'img/logos/8a.png',
-    description:(
-      <>
-      The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/8b.png',
     description:(
       <>
       The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold. 
