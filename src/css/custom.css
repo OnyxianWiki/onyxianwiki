@@ -7,7 +7,8 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
+  /* --ifm-color-primary: #25c2a0; */
+  --ifm-color-primary: #0087e0;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -30,6 +31,14 @@
   /**Borde isquierdo, largo, borde derecho, color (red, green, blue, alpha)*/
   filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15));
 }
+
+[data-theme="dark"] .navbar {
+  filter: hue-rotate(200deg);
+}
+[data-theme="dark"] .footer {
+  filter: hue-rotate(200deg);
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
@@ -40,7 +49,9 @@
 .main-wrapper {
   /*background-color: aquamarine; */
   /*background-image: url("../../static/img/header.png");*/
-  background-color: white;
+  background-color: var(
+    --ifm-background-surface-color
+  ); /*Aka blanco y negro de acuerdo a normal / night mode*/
   background-size: cover;
   padding-top: 0px;
   margin-top: 0px;
@@ -49,13 +60,18 @@
 }
 
 .container--fluid {
-  background-color: white;
+  background-color: var(
+    --ifm-background-surface-color
+  ); /*Aka blanco y negro de acuerdo a normal / night mode*/
   /* display: flex; */
   flex-grow: 1;
 }
 
 .cloudyBackground {
   background-image: url("../../static/img/header.png");
+}
+[data-theme="dark"] .cloudyBackground {
+  background-image: url("../../static/img/footer.png");
 }
 
 .centeredInDiv {
