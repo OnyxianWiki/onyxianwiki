@@ -95,6 +95,19 @@ a :hover {
   flex-direction: column;
 }
 
+.featureImage {
+  height: 150px;
+  width: auto;
+}
+
+.featureImage_src-pages- {
+  width: max-content;
+}
+
+img {
+  max-width: none;
+}
+
 .footer {
   background: lightblue;
   background-image: url("../../static/img/footer.png"); /*todo: optimizarla */
