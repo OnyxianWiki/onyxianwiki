@@ -31,11 +31,7 @@ html[data-theme="dark"] {
 }
 
 a :hover {
-  filter: drop-shadow(0px 0px 0.5rem var(--ifm-font-color-base))
-    brightness(110%);
-  /* filter: brightness(150%); */
-  /* filter: brightness(150%); */
-  /* filter: drop-shadow(0, 0, 0.75rem); */
+  filter: drop-shadow(0px 0px 0.5rem white) brightness(105%);
 }
 
 /*No funciono!*/
