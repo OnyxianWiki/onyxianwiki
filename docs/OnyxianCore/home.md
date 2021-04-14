@@ -6,5 +6,4 @@ sidebar_label: Home
 ---
 
 <!-- No hace falta poner el titulo aca, porque automaticamente se incluye. -->
-
-The documentation for the Onyxian Core will reside here.
+The Onyxian core hasn't been released yet & its documentation is still under construction. Please be patient while we prepare it :)!
