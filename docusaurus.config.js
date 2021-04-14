@@ -2,7 +2,7 @@
 module.exports = {
   title: 'Onyxian Wiki',
   tagline: 'The documentation hub for plugins by OnyxianSoul',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://onyxianwiki.vercel.app/',
   baseUrl: '/',
   favicon: 'img/favicon.png',
   organizationName: 'onyxiansoul', // Usually your GitHub org/user name.
@@ -10,6 +10,7 @@ module.exports = {
   //La configuración del docusaurus theme
   plugins: ['docusaurus-plugin-sass'],
   themeConfig: {
+    hideableSidebar: true,
     //La barra de arriba
     navbar: {
       title: 'Onyxian Wiki',
@@ -48,7 +49,7 @@ module.exports = {
         docs: { //Se le va pasar a la config docs plugin
           sidebarPath: require.resolve('./sidebars.js'),
           /**donde editar my source */
-          editUrl: 'https://github.com/OnyxianWiki/onyxianwiki/tree/master/website',
+          editUrl: 'https://github.com/OnyxianWiki/onyxianwiki/tree/master',
           /** URL route for the docs section of your site.
           * *DO NOT* include a trailing slash.
           * INFO: It is possible to set just `/` for shipping docs without base path. */
@@ -63,7 +64,6 @@ module.exports = {
         // },
         theme: {
           customCss: require.resolve('./src/css/custom.scss'),
-          hideableSidebar: true
         },
       },
     ],

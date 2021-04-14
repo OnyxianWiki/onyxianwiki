@@ -3,5 +3,11 @@ id: compatibility
 title: Compatibility
 sidebar_label: Compatibility
 ---
+## Server Softwares
+This plugin has been tested and works without issues on Spigot & Paper, and it is likely to work on any server jar that is a fork of CraftBukkit.
 
-The wiki is still under construction, and this page hasn't been prepared yet, for now for this, and other missing info of 'Damage Potion Effects', please visit https://www.spigotmc.org/resources/damage-potion-effects.88529/
+## Minecraft Versions
+The plugin has been tested on 1.16.5, it probably works on any server version, BUT, you might need to change the configuration at older minecraft versions, since some potion effects & entity types have been renamed.
+
+## Plugin compatibilities
+To my knowledge, this plugin doesn't conflict with any other plugins, and it's highly unlikely that it ever will.
