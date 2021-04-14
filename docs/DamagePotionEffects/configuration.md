@@ -1,5 +1,5 @@
 ---
-id: configuration-tldr
+id: configuration
 title: Configuration
 sidebar_label: Configuration
 ---
@@ -10,7 +10,7 @@ The configuration of this plugin has 3 parts:
 
 - At potion effects.yml you define potion effects that can be applied as a result of a damage trigger.
 
-- At config.yml you assign any ammount of the potion effects you defined to any triggers you want.
+- At config.yml you assign any amount of the potion effects you defined to any triggers you want.
 
 ## Examples
-If you need examples, please check the default config thats created when you install the plugin, also located inside of the plugin jar
+If you need examples, please check the default config that's created when you install the plugin, also located inside the plugin jar

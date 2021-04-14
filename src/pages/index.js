@@ -1,7 +1,6 @@
 import React from 'react';
 import classnames from 'classnames';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
@@ -18,7 +17,7 @@ const plugins = [
         Apply potion effects to mob attacks, physics or any damage source! Super customizable!
       </>
     ),
-    targetUrl: '../../DamagePotionEffects/damage-potion-effects',
+    targetUrl: '../../DamagePotionEffects/home',
   },
   {
     title: <>Send Console Message</>,
@@ -29,7 +28,7 @@ const plugins = [
         Combine with others to do informative and beautiful logging!
       </>
     ),
-    targetUrl: '../../docs/SendConsoleMessage/send-console-message',
+    targetUrl: '../../docs/SendConsoleMessage/home',
   },
   {
     title: <>Fall Event API</>,
@@ -40,21 +39,11 @@ const plugins = [
         Get this API and jump straight to developing with Player Fall Events!
       </>
     ),
-    targetUrl: 'https://www.spigotmc.org/resources/playerfalleventapi.86251/'
+    targetUrl: '../../docs/SendConsoleMessage/home'
   },
   {
     title: <>OnyxianCore</>,
     imagePath: 'img/logos/1a.png',
-    description: (
-      <>
-        The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/2a.png',
     description: (
       <>
         The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
@@ -74,27 +63,7 @@ const plugins = [
   },
   {
     title: <>OnyxianCore</>,
-    imagePath: 'img/logos/1d.png',
-    description: (
-      <>
-        The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
     imagePath: 'img/logos/2e.png',
-    description: (
-      <>
-        The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
-      </>
-    ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
-  },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/1c.png',
     description: (
       <>
         The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
@@ -126,9 +95,8 @@ function Feature({ imagePath, title, description, targetUrl }) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
-  return (//layout no aparece
-
-    <Layout title={`${siteConfig.title}`} description="Documentation for OnyxianSoul's Spigot Plugins." wrapperClassName="centeredInDiv cloudyBackground" >
+  return (
+    <Layout title={`${siteConfig.title}`} description="Documentation for OnyxianSoul's Spigot Plugins." wrapperClassName="centeredInDiv cloudyBackground" > {/*recordar, layout no aparece */}
       <div className="centerContent">
         <header>
           <div className="container centeredInDiv text--center">

@@ -8,23 +8,23 @@ const Plugins = [
   {
     type: 'link',
     label: 'Onyxian Core',
-    href: 'OnyxianCore/onyxian-core',
+    href: 'OnyxianCore/home',
   },
   {
     type: 'link',
     label: 'Damage Potion Effects',
-    href: 'DamagePotionEffects/damage-potion-effects',
+    href: 'DamagePotionEffects/home',
   },
   {
     type: 'link',
     label: 'Send Console Message',
-    href: 'SendConsoleMessage/send-console-message',
+    href: 'SendConsoleMessage/home',
   },
 ];
 
 
 const OnyxianCore = [ //El nombre de la var es el nombre de la barra también!
-  'OnyxianCore/onyxian-core',
+  'OnyxianCore/home',
 ];
 
 
@@ -34,10 +34,11 @@ const damagepotioneffectsbar = [
     type: 'category', //Tipo de item
     label: 'Damage Potion Effects', //Nombre con el que aparece al costado
     items: [ //Sub items
-      'DamagePotionEffects/damage-potion-effects',
-      'DamagePotionEffects/configuration-tldr',
+      'DamagePotionEffects/home',
+      'DamagePotionEffects/configuration',
       'DamagePotionEffects/damage-triggers',
       'DamagePotionEffects/installation',
+      'DamagePotionEffects/compatibility',
 
       //  pluginsBar,
       // {pluginsSideBar: pluginsBar},

@@ -1,6 +1,7 @@
 ---
-id: onyxian-core
-title: Onyxian Core
+id: home
+title: Home
+hide_title: true
 sidebar_label: Home
 ---
 
