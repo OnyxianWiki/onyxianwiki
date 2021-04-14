@@ -21,6 +21,7 @@ const Plugins = [
 
 const OnyxianCore = [ //El nombre de la var es el nombre de la barra también!
   'OnyxianCore/home',
+
 ];
 
 const damagepotioneffectsbar = [
@@ -38,8 +39,6 @@ const damagepotioneffectsbar = [
   { OnyxianCore },
   { Plugins },
 ]
-
-// ],
 
 //Lista todas las side bars de la isquierda
 module.exports = [
