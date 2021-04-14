@@ -1,10 +1,6 @@
 //https://docusaurus.io/docs/sidebar#hideable-sidebar
 
 const Plugins = [
-  //El item principal
-  //     // type: 'category', //Tipo de item
-  //     // label: 'Plugins', //Nombre con el que aparece al costado
-  //     // collapsed: true, //Si aparece colapasada por defualt (creo que se aplica solo a cateogries)
   {
     type: 'link',
     label: 'Onyxian Core',
@@ -27,28 +23,16 @@ const OnyxianCore = [ //El nombre de la var es el nombre de la barra también!
   'OnyxianCore/home',
 ];
 
-
-
 const damagepotioneffectsbar = [
-  {//El item principal
+  { //un item.
     type: 'category', //Tipo de item
     label: 'Damage Potion Effects', //Nombre con el que aparece al costado
     items: [ //Sub items
       'DamagePotionEffects/home',
-      'DamagePotionEffects/configuration',
-      'DamagePotionEffects/damage-triggers',
       'DamagePotionEffects/installation',
       'DamagePotionEffects/compatibility',
-
-      //  pluginsBar,
-      // {pluginsSideBar: pluginsBar},
-      //  {
-      //    type: 'link',
-      //    label: 'Landing page',
-      //    href: 'DamagePotionEffects/damage-potion-effects',
-      //  }
-      // {type: 'doc', id:'Landing Page', items:['DamagePotionEffects/damage-potion-effects']},
-      //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'DamagePotionEffects/damage-potion-effects'}
+      'DamagePotionEffects/configuration',
+      'DamagePotionEffects/damage-triggers',
     ]
   },
   { OnyxianCore },
