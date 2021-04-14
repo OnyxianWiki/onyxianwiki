@@ -13,9 +13,10 @@ The Onyxian Core is a plugin provided & used by my most complex plugins. It is a
 
 
 ## Learn more
-*Want a Step by Step overview of this plugin?*
+*Want a Step by Step overview of this plugin?*<br/>
 Use the next button at the bottom of the page to gradually explore the plugin
 
 *Want to learn something in particular?*
-Click one of theese links to jump right to it:
+Click one of theese links to jump right to it:<br/>
 ‣ <a href="./installation">Installation</a><br/>
+‣ <a href="./configuration">Configuration</a><br/>

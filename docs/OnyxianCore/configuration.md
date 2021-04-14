@@ -4,7 +4,7 @@ title: Configuration
 sidebar_label: Configuration
 ---
 
-## Summary
+## Summaryg
 
 The configuration of the Onyxian Core is split across 3 files:
 - **config.yml** contains general configuration settings that determine how the plugin works.
