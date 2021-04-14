@@ -43,7 +43,7 @@ a :hover {
   background: lightblue;
   background-image: url("../../static/img/header.png"); /*todo: optimizarla */
   /**Borde isquierdo, largo, borde derecho, color (red, green, blue, alpha)*/
-  filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15));
+  // filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15)); // POR ALGUNA RAZON ROMPE LA NAVBAR
 }
 
 [data-theme="dark"] .navbar {
@@ -53,38 +53,38 @@ a :hover {
   filter: hue-rotate(200deg);
 }
 
-.docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
-}
+ .docusaurus-highlight-code-line {
+   background-color: rgb(72, 77, 91);
+   display: block;
+   margin: 0 calc(-1 * var(--ifm-pre-padding));
+   padding: 0 var(--ifm-pre-padding);
+  }
 
-.main-wrapper {
-  /*background-color: aquamarine; */
-  /*background-image: url("../../static/img/header.png");*/
-  background-color: var(
-    --ifm-background-surface-color
-  ); /*Aka blanco y negro de acuerdo a normal / night mode*/
-  background-size: cover;
-  padding-top: 0px;
-  margin-top: 0px;
-  display: flex;
-  flex-direction: column;
-}
+ .main-wrapper {
+   /*background-color: aquamarine; */
+   /*background-image: url("../../static/img/header.png");*/
+   background-color: var(
+     --ifm-background-surface-color
+   ); /*Aka blanco y negro de acuerdo a normal / night mode*/
+   background-size: cover;
+   padding-top: 0px;
+   margin-top: 0px;
+   display: flex;
+   flex-direction: column;
+ }
 
-.container--fluid {
-  background-color: var(
-    --ifm-background-surface-color
-  ); /*Aka blanco y negro de acuerdo a normal / night mode*/
-  /* display: flex; */
-  flex-grow: 1;
-}
+ .container--fluid {
+   background-color: var(
+     --ifm-background-surface-color
+   ); /*Aka blanco y negro de acuerdo a normal / night mode*/
+   /* display: flex; */
+   flex-grow: 1;
+ }
 
-.referenceList{
-  display:flex;
-  
-}
+
+ .referenceList{
+   display:flex;
+ }
 
 
 .cloudyBackground {
@@ -94,12 +94,13 @@ a :hover {
   background-image: url("../../static/img/footer.png");
 }
 
-.centeredInDiv {
-  justify-content: center;
-}
-.flexDirCol {
-  flex-direction: column;
-}
+ .centeredInDiv {
+   justify-content: center;
+ }
+
+ .flexDirCol {
+   flex-direction: column;
+ }
 
 .featureImage {
   height: 150px;
@@ -121,13 +122,3 @@ img {
   filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15));
   padding: calc(var(--ifm-spacing-vertical) * 0.5);
 }
-
-/*Sacados porque editar el documento es mas preciso, on se sabe si esto se usa para otra cosa.*/
-/* .padding-vert--lg {
-  padding-bottom: 0px !important;
-  padding-top: 0px !important;
-}
-.margin-vert--lg {
-  margin-bottom: 0px !important;
-  margin-top: 0px !important;
-} */
