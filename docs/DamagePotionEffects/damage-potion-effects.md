@@ -1,8 +1,10 @@
 ---
 id: damage-potion-effects
-title: Damage Potion Effects
+hide_title: true
+title: Home
 sidebar_label: Home
 ---
+# Damage Potion Effects
 
 ## tldr
 This plugin allows you to automatically apply potion effects to entities that suffer damage, allowing you to increase Minecraft's realism or difficulty, or simply add a cool or funny mechanic.
@@ -14,5 +16,6 @@ It also comes with a nice and balanced default configuration, so you can just dr
 A topic peaks interest? Click on it to learn more about it
 
 <a href="./compatibility">Compatibility</a>
-
+<a href="./compatibility">Installation</a>
+<a href="./configuration-tldr">Configuration tldr</a>
 Want a Step by Step overview of this plugin? Begin at #getting started & we'll gradually explain everything.

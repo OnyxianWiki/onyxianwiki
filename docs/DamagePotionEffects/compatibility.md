@@ -1,7 +1,7 @@
 ---
-id: installation
-title: Installation
-sidebar_label: Installation
+id: compatibility
+title: Compatibility
+sidebar_label: Compatibility
 ---
 
 The installation of this plugin is very simple:

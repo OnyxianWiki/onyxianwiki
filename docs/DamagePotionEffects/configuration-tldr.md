@@ -1,14 +1,16 @@
 ---
-id: compatibility
-title: Compatibility
-sidebar_label: Compatibility
+id: configuration-tldr
+title: Configuration
+sidebar_label: Configuration
 ---
 
-## Server software
-This plugin has been tested and works without issues on Spigot & Paper, and it is likely to work on any server jar that is a fork of CraftBukkit.
+## Summary
+The configuration of this plugin has 3 parts:
+- At damage triggers.yml you define sources of damage that can cause potion effects.
 
-## Server version
-The plugin has been tested on 1.16.5, it is likely that it works on any server version, BUT, you might need to change the configuration on older versions, since some potion effects & entity types didn't exist in older versions and others were called differently.
+- At potion effects.yml you define potion effects that can be applied as a result of a damage trigger.
 
-To my knowledge, this plugin doesn't conflict with any other plugins, and it's highly unlikely that it ever will.
-​
+- At config.yml you assign any ammount of the potion effects you defined to any triggers you want.
+
+## Examples
+If you need examples, please check the default config thats created when you install the plugin, also located inside of the plugin jar

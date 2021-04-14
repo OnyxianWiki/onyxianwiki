@@ -1,6 +1,6 @@
 //https://docusaurus.io/docs/sidebar#hideable-sidebar
 
- const Plugins = [
+const Plugins = [
   //El item principal
   //     // type: 'category', //Tipo de item
   //     // label: 'Plugins', //Nombre con el que aparece al costado
@@ -23,34 +23,38 @@
 ];
 
 
- const OnyxianCore = [ //El nombre de la var es el nombre de la barra también!
+const OnyxianCore = [ //El nombre de la var es el nombre de la barra también!
   'OnyxianCore/onyxian-core',
-  ];
+];
 
 
 
 const damagepotioneffectsbar = [
   {//El item principal
-   type: 'category', //Tipo de item
-   label: 'Damage Potion Effects', //Nombre con el que aparece al costado
-   items: [ //Sub items
-     'DamagePotionEffects/damage-potion-effects',
-    //  pluginsBar,
-     // {pluginsSideBar: pluginsBar},
-    //  {
-    //    type: 'link',
-    //    label: 'Landing page',
-    //    href: 'DamagePotionEffects/damage-potion-effects',
-    //  }
-     // {type: 'doc', id:'Landing Page', items:['DamagePotionEffects/damage-potion-effects']},
-       //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'DamagePotionEffects/damage-potion-effects'}
+    type: 'category', //Tipo de item
+    label: 'Damage Potion Effects', //Nombre con el que aparece al costado
+    items: [ //Sub items
+      'DamagePotionEffects/damage-potion-effects',
+      'DamagePotionEffects/configuration-tldr',
+      'DamagePotionEffects/damage-triggers',
+      'DamagePotionEffects/installation',
+
+      //  pluginsBar,
+      // {pluginsSideBar: pluginsBar},
+      //  {
+      //    type: 'link',
+      //    label: 'Landing page',
+      //    href: 'DamagePotionEffects/damage-potion-effects',
+      //  }
+      // {type: 'doc', id:'Landing Page', items:['DamagePotionEffects/damage-potion-effects']},
+      //Subitem 1, es lo mismo que decir {type: 'doc',  id: 'DamagePotionEffects/damage-potion-effects'}
     ]
   },
-  {OnyxianCore},
-  {Plugins},
-  ]
+  { OnyxianCore },
+  { Plugins },
+]
 
-  // ],
+// ],
 
 //Lista todas las side bars de la isquierda
 module.exports = [
