@@ -28,7 +28,7 @@ const plugins = [
         Combine with others to do informative and beautiful logging!
       </>
     ),
-    targetUrl: '../../docs/SendConsoleMessage/home',
+    targetUrl: '../../SendConsoleMessage/home',
   },
   {
     title: <>Fall Event API</>,
@@ -39,7 +39,7 @@ const plugins = [
         Get this API and jump straight to developing with Player Fall Events!
       </>
     ),
-    targetUrl: '../../docs/SendConsoleMessage/home'
+    targetUrl: '../../PlayerFallEventAPI/home'
   },
   {
     title: <>OnyxianCore</>,
@@ -49,7 +49,7 @@ const plugins = [
         The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
       </>
     ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
+    targetUrl: '../../OnyxianCore/home',
   },
   {
     title: <>OnyxianCore</>,
@@ -59,7 +59,7 @@ const plugins = [
         The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
       </>
     ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
+    targetUrl: '../../OnyxianCore/home',
   },
   {
     title: <>OnyxianCore</>,
@@ -69,7 +69,7 @@ const plugins = [
         The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
       </>
     ),
-    targetUrl: '../../docs/OnyxianCore/onyxian-core',
+    targetUrl: '../../OnyxianCore/home',
   },
 ];
 
