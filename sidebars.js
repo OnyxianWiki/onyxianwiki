@@ -21,7 +21,10 @@ const Plugins = [
 
 const OnyxianCore = [ //El nombre de la var es el nombre de la barra también!
   'OnyxianCore/home',
-
+  'OnyxianCore/installation',
+  'OnyxianCore/configuration',
+  'OnyxianCore/variables',
+  'OnyxianCore/actions',
 ];
 
 const damagepotioneffectsbar = [
