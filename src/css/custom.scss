@@ -23,11 +23,38 @@
   --ifm-h4-font-size: 1rem;
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
+  //Table
+  --ifm-table-stripe-background: #d6dfe8; //rgb(255, 227, 176);
 }
+
+.MuiPaper-root {
+  //background-color:wheat!important;
+  background-color:rgb(246, 248, 250)!important; //Light
+}
+
 
 html[data-theme="dark"] {
   --ifm-background-color: #1e2125;
   --ifm-background-surface-color: #121212;
+  //--ifm-table-stripe-background: #2e303e; //Como estaba
+  --ifm-table-stripe-background: rgb(40, 42, 54);
+
+  .MuiPaper-root{
+    color: white;
+    //background-color: rgb(40, 42, 54)!important;//Como estaba
+    background-color: #2e303e!important;
+  }
+  .MuiTableCell-body{
+    color: white;
+  }
+  .MuiInputBase-root{
+    color: inherit;
+  }
+}
+
+
+.MTableHeader-header-13 { //.MTableHeader-header-13  ESTABA SOBREESCRIBIENDO EL BACKGORUND COLOR EN EL HEADER asi que lo cambie uups lol.
+  background-color:wheat!important;
 }
 
 a :hover {

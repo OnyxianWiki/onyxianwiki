@@ -48,10 +48,18 @@ function Table(props) {
                 paging: false,
                 thirdSortClick: false,
                 showTextRowsSelected: true,
-
-
                 //exportButton: false //FUNCIONA
             }}
+            columns={[
+                { title: 'Name', field: 'name', },
+                { title: 'Awesomeness', field: 'awesomeness' },
+                { title: 'Birth Year', field: 'faction' },
+                // {
+                //     title: 'Birth Place',
+                //     field: 'birthCity',
+                //     lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' },
+                // },
+            ]}
             icons={tableIcons}
             {...props} //Todas las props pasadas en el constructor overirdearan a las dadas por defecto y a las faltantes, porque esto esta despues :)
         />

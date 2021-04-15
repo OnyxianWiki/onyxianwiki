@@ -10,14 +10,9 @@ The Onyxian Core provides several variable types that you can use to define vari
 <WikiTable
 title="Basic Sorting Preview"
 columns={[
-    { title: 'Name', field: 'name' },
-    { title: 'Awesomeness', field: 'awesomeness' },
-    { title: 'Birth Year', field: 'faction' },
-    // {
-    //     title: 'Birth Place',
-    //     field: 'birthCity',
-    //     lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' },
-    // },
+    { title: 'Name', field: 'name', filterPlaceholder: 'Filter by name', removable:true, resizable:true, tooltip:'How its called' },
+    { title: 'Awesomeness', field: 'awesomeness', filterPlaceholder: 'Filter by Awesomeness' },
+    { title: 'Birth Year', field: 'faction', filterPlaceholder: 'Filter by Birth Year' },
 ]}
 data={[
     { name: 'Zudma', faction: 'Guthixian', awesomeness: 999},
