@@ -24,6 +24,8 @@ const OnyxianCore = [ //El nombre de la var es el nombre de la barra también!
   'OnyxianCore/installation',
   'OnyxianCore/configuration',
   'OnyxianCore/variables',
+  'OnyxianCore/variable-types',
+  'OnyxianCore/available-variables',
   'OnyxianCore/actions',
 ];
 

@@ -1,0 +1,25 @@
+---
+id: variable-types
+title: Variable Types
+sidebar_label: Variable-types
+---
+import WikiTable from '../../src/components/WikiTable'
+
+The Onyxian Core provides several variable types that you can use to define variables inside variables.yml, this is the full list:
+
+<WikiTable
+title="Basic Sorting Preview"
+columns={[
+    { title: 'Name', field: 'name' },
+    { title: 'Awesomeness', field: 'awesomeness' },
+    { title: 'Birth Year', field: 'faction' },
+    // {
+    //     title: 'Birth Place',
+    //     field: 'birthCity',
+    //     lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' },
+    // },
+]}
+data={[
+    { name: 'Zudma', faction: 'Guthixian', awesomeness: 999},
+    { name: 'Evil Dave', faction: 'Zamorakian', awesomeness: 20 },
+]} />

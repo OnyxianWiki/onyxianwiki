@@ -4,6 +4,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
+import Table from '../components/WikiTable';
 
 //Creo que sacaria el de la gema cool sola, el veerde agua
 

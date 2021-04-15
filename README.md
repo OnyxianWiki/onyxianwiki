@@ -1,12 +1,29 @@
 # Onyxian Wiki
+## About
+This is the source code of the Onyxian Wiki, the documentation hub for all Spigot plugins by OnyxianSoul.
 
-The documentation hub for all Spigot plugins by Onyxiansoul
+## Visit!
+See the live version at :
+https://onyxianwiki.vercel.app/
 
-## See the plugins at
 
+## Get the plugins!
+You can get the plugins at:
 https://www.spigotmc.org/members/onyxiansoul.667504/
 
 
-## Visit the wiki at
+## Contribute!
+Contributions are welcome.
+Feel free to submit pull requests if you believe something could be improved :)
 
-https://onyxianwiki.vercel.app/
+## Technologies:
+The wiki is based on Docusaurus ( https://docusaurus.io ), which is built with next ( https://nextjs.org/ ) that uses react ( https://es.reactjs.org/ )
+
+The documentation is written in MDX ( https://mdxjs.com/ ).
+
+Docusaurus Styling is provided by Infima (https://infima.dev/). I customize general Styling with SASS ( https://sass-lang.com/ ), & do component-specific styling with Styled Components ( https://styled-components.com/ ).
+
+The main component framework used is material UI ( https://material-ui.com/ ).
+
+
+
