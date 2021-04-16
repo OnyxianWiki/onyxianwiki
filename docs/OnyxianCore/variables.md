@@ -29,4 +29,3 @@ onyxiansoul balance: #The name of the variable
   placeholder: %balance% #The parameter the val
   player to evaluate: "OnyxianSoul"
 ```
-<Alert><>

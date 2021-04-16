@@ -17,14 +17,21 @@
   --ifm-color-primary-lightest: #24a8ff;
   --ifm-font-size-base: 125%;
   --ifm-code-font-size: 95%;
-  --ifm-h1-font-size: 2rem;
-  --ifm-h2-font-size: 1.5rem;
-  --ifm-h3-font-size: 1.25rem;
-  --ifm-h4-font-size: 1rem;
+  --ifm-h1-font-size: 3rem;
+  --ifm-h2-font-size: 2.5rem;
+  --ifm-h3-font-size: 2rem;
+  --ifm-h4-font-size: 1.5rem;
   --ifm-h5-font-size: 0.875rem;
   --ifm-h6-font-size: 0.85rem;
   //Table
   --ifm-table-stripe-background: #d6dfe8; //rgb(255, 227, 176);
+  --ifm-navbar-height: 2.5rem;
+}
+h1,h3,h5{
+  color:var(--ifm-color-primary);
+}
+h2,h4,h6{
+  color:var(--ifm-color-primary-light);
 }
 
 .MuiPaper-root {
@@ -50,12 +57,34 @@ html[data-theme="dark"] {
   .MuiInputBase-root{
     color: inherit;
   }
+
+  h1,h3,h5{
+    //color:var(--ifm-color-primary-lightest);
+    //color:white;
+    color:#a9dfff;
+  }
+  h2,h4,h6{
+    //color:var(--ifm-color-primary-light);
+    //color:white;
+    color:#a9f7ff
+  }
+}
+
+.navbar {
+  background: lightblue;
+  background-image: url("../../static/img/header.png"); /*todo: optimizarla */
+  /**Borde isquierdo, largo, borde derecho, color (red, green, blue, alpha)*/
+  // filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15)); // POR ALGUNA RAZON ROMPE LA NAVBAR
 }
 
 
 .MTableHeader-header-13 { //.MTableHeader-header-13  ESTABA SOBREESCRIBIENDO EL BACKGORUND COLOR EN EL HEADER asi que lo cambie uups lol.
-  background-color:wheat!important;
+  background-color:wheat!important; // NO funco abajo por alguna razon
 }
+// a.lighter {
+//   color: lighten($linkcolour, 50%);
+// }
+
 
 a :hover {
   filter: drop-shadow(0px 0px 0.5rem white) brightness(105%);
@@ -66,12 +95,7 @@ a :hover {
   --ifm-color-primary: #e2c102;
 } */
 
-.navbar {
-  background: lightblue;
-  background-image: url("../../static/img/header.png"); /*todo: optimizarla */
-  /**Borde isquierdo, largo, borde derecho, color (red, green, blue, alpha)*/
-  // filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15)); // POR ALGUNA RAZON ROMPE LA NAVBAR
-}
+
 
 [data-theme="dark"] .navbar {
   filter: hue-rotate(200deg);
@@ -147,5 +171,44 @@ img {
   background-image: url("../../static/img/footer.png"); /*todo: optimizarla */
   /**Borde isquierdo, largo, borde derecho, color (red, green, blue, alpha)*/
   filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15));
-  padding: calc(var(--ifm-spacing-vertical) * 0.5);
+  padding: calc(var(--ifm-spacing-vertical) * 0.075);
+}
+
+
+//Deberia estar en DocItem pero no funciona por alguna razon ahí.
+.editButtonSection{
+  align-self:flex-end;
+  margin-top:auto;
+  margin-bottom:1rem;
+  padding-top: 1rem;
+}
+
+.paginationSection{
+  margin-top:1rem;
+  margin-bottom:1rem;
+}
+
+//Deberia estar en DocPage
+.documentationPageMainBox{
+  padding-top: 1.5rem !important;
+  padding-bottom: 1rem !important;
+  max-width:100%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.docPageHorCenter{
+  display: flex;
+  flex-direction: column;
+}
+
+.fullHeight{
+  height :100%;
+}
+.rightSidebar{
+  margin-left:4rem !important;
+  margin-right:4rem !important;
+  padding-right:0px !important;
+  --ifm-col-width: calc(2.5 / 12 * 100%) !important;
+  max-width: var(--ifm-col-width) !important;
 }
