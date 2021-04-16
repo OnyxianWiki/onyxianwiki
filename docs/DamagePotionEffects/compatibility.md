@@ -3,7 +3,7 @@ id: compatibility
 title: Compatibility
 sidebar_label: Compatibility
 ---
-## Server Softwares
+## Server Software
 This plugin has been tested and works without issues on Spigot & Paper, and it is likely to work on any server jar that is a fork of CraftBukkit.
 
 ## Minecraft Versions
