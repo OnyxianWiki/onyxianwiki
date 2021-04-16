@@ -63,7 +63,8 @@ html[data-theme="dark"] {
     //color:white;
     color:#a9dfff;
   }
-  h2,h4,h6{
+  --ifm-link-color:#a9f7ff;
+  .menu__link--active,.pagination-nav__label,.table-of-contents__link--active,.editButtonSection, h2,h4,h6{
     //color:var(--ifm-color-primary-light);
     //color:white;
     color:#a9f7ff
