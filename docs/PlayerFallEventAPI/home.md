@@ -5,5 +5,4 @@ hide_title: true
 sidebar_label: Home
 ---
 
-The documentation for the Player Fall Event API will reside here.
-https://github.com/OnyxianSoul/PlayerFallEventAPI
+The wiki is still under construction, and this page hasn't been prepared yet, for now, for this, and other missing info of 'Send Console Message', please visit https://github.com/OnyxianSoul/PlayerFallEventAPI or https://www.spigotmc.org/resources/player-fall-event-api.86251/

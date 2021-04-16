@@ -73,7 +73,9 @@ html[data-theme="dark"] {
 
 .navbar {
   background: lightblue;
-  background-image: url("../../static/img/header.png"); /*todo: optimizarla */
+  background-image: url("../../static/img/header.png");
+  align-items: center;
+   /*todo: optimizarla */
   /**Borde isquierdo, largo, borde derecho, color (red, green, blue, alpha)*/
   // filter: drop-shadow(1px 3px 1px rgba(0, 100, 100, 0.15)); // POR ALGUNA RAZON ROMPE LA NAVBAR
 }
@@ -89,6 +91,22 @@ html[data-theme="dark"] {
 
 a :hover {
   filter: drop-shadow(0px 0px 0.5rem white) brightness(105%);
+}
+
+.logosRow{
+  align-items: center;
+  justify-content: center;
+}
+
+.landingCol{
+  padding:0px!important;
+  margin:0px!important;
+}
+
+.logosSection{
+  max-width: 90%;
+  width: 100%;
+  margin: 0 auto;
 }
 
 /*No funciono!*/

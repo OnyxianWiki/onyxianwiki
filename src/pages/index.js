@@ -42,16 +42,16 @@ const plugins = [
     ),
     targetUrl: '../../PlayerFallEventAPI/home'
   },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/1a.png',
-    description: (
-      <>
-        The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
-      </>
-    ),
-    targetUrl: '../../OnyxianCore/home',
-  },
+  // {
+  //   title: <>OnyxianCore</>,
+  //   imagePath: 'img/logos/1a.png',
+  //   description: (
+  //     <>
+  //       The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
+  //     </>
+  //   ),
+  //   targetUrl: '../../OnyxianCore/home',
+  // },
   {
     title: <>OnyxianCore</>,
     imagePath: 'img/logos/2d.png',
@@ -62,28 +62,26 @@ const plugins = [
     ),
     targetUrl: '../../OnyxianCore/home',
   },
-  {
-    title: <>OnyxianCore</>,
-    imagePath: 'img/logos/2e.png',
-    description: (
-      <>
-        The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
-      </>
-    ),
-    targetUrl: '../../OnyxianCore/home',
-  },
+  // {
+  //   title: <>OnyxianCore</>,
+  //   imagePath: 'img/logos/2e.png',
+  //   description: (
+  //     <>
+  //       The nucleus of my most advanced plugins. Makes your configuration easier, and increases their plugin power ∞-fold.
+  //     </>
+  //   ),
+  //   targetUrl: '../../OnyxianCore/home',
+  // },
 ];
 
 function Feature({ imagePath, title, description, targetUrl }) {
   const imgUrl = useBaseUrl(imagePath);
   return (
-    <div className={classnames('col col--4', styles.feature)}>
+    <div className={classnames('col col--4 landingCol', styles.feature)}>
       <a href={targetUrl}>
         {imgUrl && (
           <div className="text--center">
-
             <img className="featureImage" src={imgUrl} alt={title} />
-
           </div>
         )}
         <h3>{title}</h3>
@@ -111,8 +109,8 @@ function Home() {
         <main className=" text--center">
           {plugins && plugins.length && (
             <section className={styles.features}>
-              <div className="container">
-                <div className="row">
+              <div className="logosSection">
+                <div className="row logosRow">
                   {plugins.map((props, idx) => (
                     <Feature key={idx} {...props} />
                   ))}
