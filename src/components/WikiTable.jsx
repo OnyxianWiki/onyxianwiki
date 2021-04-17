@@ -48,18 +48,21 @@ function Table(props) {
                 paging: false,
                 thirdSortClick: false,
                 showTextRowsSelected: true,
+                columnsButton:true,
+                padding:'default', //Es el padding entre cols, alt es compact
                 //exportButton: false //FUNCIONA
             }}
-            columns={[
-                { title: 'Name', field: 'name', },
-                { title: 'Awesomeness', field: 'awesomeness' },
-                { title: 'Birth Year', field: 'faction' },
-                // {
-                //     title: 'Birth Place',
-                //     field: 'birthCity',
-                //     lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' },
-                // },
-            ]}
+            localization={{
+                toolbar: {
+                    searchPlaceholder: 'Filter the table...',
+                    searchTooltip: 'Write to filter the table to entries containing your text',
+                },
+                body: {
+                    filterRow: {
+                        filterTooltip: 'Write to filter the table by this column\'s value!'
+                    }
+                }
+            }}
             icons={tableIcons}
             {...props} //Todas las props pasadas en el constructor overirdearan a las dadas por defecto y a las faltantes, porque esto esta despues :)
         />

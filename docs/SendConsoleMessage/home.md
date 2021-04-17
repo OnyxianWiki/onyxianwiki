@@ -3,6 +3,7 @@ id: home
 title: Home
 hide_title: true
 sidebar_label: Home
+hide_table_of_contents: true
 ---
 
 <!-- No hace falta poner el titulo aca, porque automaticamente se incluye. -->

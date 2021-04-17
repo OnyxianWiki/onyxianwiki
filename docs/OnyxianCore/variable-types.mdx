@@ -9,7 +9,7 @@ import WikiTable from '../../src/components/WikiTable'
 
 :::danger
 
-This page does not contain documentation right now. It is currently a showcase in order to gather feedback.
+This page currently contains giberish, not documentation, It is currently a showcase in order to gather feedback.
 
 :::
 
@@ -18,11 +18,12 @@ The Onyxian Core provides several variable types that you can use to define vari
 <WikiTable
 title="Basic Sorting Preview"
 columns={[
-    { title: 'Name', field: 'name', filterPlaceholder: 'Filter by name', removable:true, resizable:true, tooltip:'How its called' },
-    { title: 'Awesomeness', field: 'awesomeness', filterPlaceholder: 'Filter by Awesomeness' },
-    { title: 'Birth Year', field: 'faction', filterPlaceholder: 'Filter by Birth Year' },
+    { title: 'Name', field: 'name', filterPlaceholder: 'Filter by name', removable:true, resizable:true, tooltip:'How its called'},
+    { title: 'Awesomeness', field: 'awesomeness', filterPlaceholder: 'Filter by Awesomeness', tooltip:'The level of awesomeness'},
+    { title: 'Faction', field: 'faction', filterPlaceholder: 'Filter by Faction', tooltip:'Their allegiance'},
 ]}
 data={[
     { name: 'Zudma', faction: 'Guthixian', awesomeness: 999},
     { name: 'Evil Dave', faction: 'Zamorakian', awesomeness: 20 },
-]} />
+]}
+ />

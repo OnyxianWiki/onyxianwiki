@@ -219,6 +219,7 @@ img {
 .docPageHorCenter{
   display: flex;
   flex-direction: column;
+  //min-width: 100%; > soluciona el hecho de que haya espacio ocupado incluso con sidebar desactivado pero la saca siempre xd.
 }
 
 .fullHeight{
