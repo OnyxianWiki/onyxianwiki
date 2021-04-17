@@ -1,0 +1,21 @@
+---
+id: action-types
+title: Action Types
+sidebar_label: Action-types
+hide_table_of_contents: true
+---
+
+import WikiTable from '../../src/components/WikiTable'
+<WikiTable
+title="Action types"
+columns={[
+    { title: 'Name', field: 'name', filterPlaceholder: 'Filter by name', removable:true, resizable:true, tooltip:'How it\'s called'},
+    { title: 'Description', field: 'description', filterPlaceholder: 'Filter by Description', removable:true, resizable:true, tooltip:'What it does'},
+    { title: 'Parameters', field: 'parameters', filterPlaceholder: 'Filter by Parameters', tooltip:'Parameters it has'},
+    {/* { title: 'Ex. Use Cases', field: 'useCases', filterPlaceholder: 'Filter by Example Use Cases', tooltip:'Some cases where it may be useful'}, */}
+]}
+data={[
+    { name: 'Zudma', description: 'Guthixian', parameters: 999},
+    { name: 'Evil Dave', description: 'Zamorakian', parameters: 20 },
+]}
+ />

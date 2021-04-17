@@ -61,13 +61,16 @@ html[data-theme="dark"] {
   h1,h3,h5{
     //color:var(--ifm-color-primary-lightest);
     //color:white;
-    color:#a9dfff;
+    color:rgb(248, 209, 135);//#a9dfff;
   }
-  --ifm-link-color:#a9f7ff;
+  --ifm-link-color:wheat;//#a9f7ff
   .menu__link--active,.pagination-nav__label,.table-of-contents__link--active,.editButtonSection, h2,h4,h6{
     //color:var(--ifm-color-primary-light);
     //color:white;
-    color:#a9f7ff
+    color:wheat;
+  }
+  .MuiTableCell-head { //.MTableHeader-header-13  ESTABA SOBREESCRIBIENDO EL BACKGORUND COLOR EN EL HEADER asi que lo cambie uups lol.
+    background-color:wheat!important; // NO funco abajo por alguna razon
   }
 }
 
@@ -81,9 +84,7 @@ html[data-theme="dark"] {
 }
 
 
-.MTableHeader-header-13 { //.MTableHeader-header-13  ESTABA SOBREESCRIBIENDO EL BACKGORUND COLOR EN EL HEADER asi que lo cambie uups lol.
-  background-color:wheat!important; // NO funco abajo por alguna razon
-}
+
 // a.lighter {
 //   color: lighten($linkcolour, 50%);
 // }

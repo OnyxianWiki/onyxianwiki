@@ -38,7 +38,7 @@ const Heading = (Tag) =>
           })}
           id={id}
         />
-        <a href={`#${id}`}>{props.children}</a>
+        <a href={`#${id}`} title="Go!">{props.children}</a>
         <a
           className="hash-link"
           href={`#${id}`}
