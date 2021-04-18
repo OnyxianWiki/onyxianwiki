@@ -49,8 +49,8 @@ function Table(props) {
                 thirdSortClick: false,
                 showTextRowsSelected: true,
                 columnsButton:true,
-                padding:'default', //Es el padding entre cols, alt es compact
-                //exportButton: false //FUNCIONA
+                padding:'compact', //Es el padding entre cols, alt es compact
+                //exportButton: true //FUNCIONA
             }}
             localization={{
                 toolbar: {

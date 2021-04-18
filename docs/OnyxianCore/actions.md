@@ -11,7 +11,6 @@ Each action has parameters that can be used to modify how/when/what they apply t
 Additionally, actions can take variables as parameters
 
 
-The Onyxian Core comes with a lot of built in actions, and they can take parameters to change what they do, making it so you can do basicly anything with them.
+The Onyxian Core comes with a lot of built-in action types, and they can take parameters to change what they do, making it so you can do basically anything with them.
 
-Actions are built into the plugin, but they are al
 ## Full list

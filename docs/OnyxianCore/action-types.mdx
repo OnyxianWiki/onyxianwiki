@@ -4,18 +4,33 @@ title: Action Types
 sidebar_label: Action-types
 hide_table_of_contents: true
 ---
-
 import WikiTable from '../../src/components/WikiTable'
+
+The Onyxian Core provides several action types that you can use to define actions inside actions.yml, this is the full list:
+
 <WikiTable
 title="Action types"
 columns={[
-    { title: 'Name', field: 'name', filterPlaceholder: 'Filter by name', removable:true, resizable:true, tooltip:'How it\'s called'},
+    { title: 'Name', field: 'name', filterPlaceholder: 'Filter by name', removable:true, resizable:true, tooltip:'How it\'s called', editable:true},
     { title: 'Description', field: 'description', filterPlaceholder: 'Filter by Description', removable:true, resizable:true, tooltip:'What it does'},
-    { title: 'Parameters', field: 'parameters', filterPlaceholder: 'Filter by Parameters', tooltip:'Parameters it has'},
-    {/* { title: 'Ex. Use Cases', field: 'useCases', filterPlaceholder: 'Filter by Example Use Cases', tooltip:'Some cases where it may be useful'}, */}
-]}
+    { title: 'Parameters', field: 'parameters', filterPlaceholder: 'Filter by Parameters', tooltip:<div>Action's Parameters <br/>(ParameterType ParameterName: DefaultValue)</div>}
+    
+    // { title: 'Parameter Types', field: 'parameterTypes', filterPlaceholder: 'Filter by Parameter Types', tooltip:'The type of each parameter'},
+    // {title: 'Parameter Defaults', field: 'parameterDefaults', filterPlaceholder: 'Filter by Parameter Default Value', tooltip:'The default value of each parameter'}
+    //{ title: 'Ex. Use Cases', field: 'useCases', filterPlaceholder: 'Filter by Example Use Cases', tooltip:'Some cases where it may be useful'}
+]}  
 data={[
-    { name: 'Zudma', description: 'Guthixian', parameters: 999},
-    { name: 'Evil Dave', description: 'Zamorakian', parameters: 20 },
+    //{ name: 'Send Console Message', description: 'Guthixian', parameters: <h1>- message (String)</h1>}, --> se puede usar componentes dentro, como aca.
+    //{ name: 'Send Console Message', description: 'Sends a message to the console.', parameters: <div>message<hr/>test</div>, parameterTypes: 'String', parameterDefaults:'none'}, //ESO PERMITE HACER SUBFILAS TIPO:     { name: 'Send Console Message', description: 'Sends a message to the console.', parameters: <div>message<hr/>test</div>, parameterTypes: 'String', parameterDefaults:'none'},
+    // You can confortably write the documentation in CSV, and then just conver ti to json and paste it here to add something. https://csvjson.com/csv2json
+    { name: 'send console message', description: 'Sends a message to the console.', parameters: 'String message: none'},
+    { name: 'run command', description: 'Runs a command from the console', parameters: 'String command: none'},
+    { name: 'set health', description: 'Sets the ammount of hearts of an entity', parameters: <div> Damageable damageable: none<br/>Double health: none </div>},
+    { name: 'probably run', description: 'Runs an action *probability*/*total* of the times. probability:1 total: 100 means the action will run 1% of the times.', parameters: <div> Actionable action: none<br/>Integer chances: none, Integer total: 100 </div>},
+    { name: 'conditionally run', description: 'Runs an action if a condition is met', parameters: <div> 'Boolean condition: none<br/>Action if true: none, Action if false: none </div>},
 ]}
  />
+
+<!-- let function assign(columnValues){
+    return({name:columnValues[0], description:columnValues[1],parameters:columnValues[2], parameterTypes:columnValues[3],parameterDefaults:columnValues[4]})
+} -->
