@@ -7,23 +7,22 @@ hide_table_of_contents: true
 ---
 import WikiTable from '../../src/components/WikiTable'
 
-:::caution
-
-This page currently contains giberish, not documentation, It is currently a showcase in order to gather feedback.
-
-:::
-
 The Onyxian Core provides several variable types that you can use to define variables inside variables.yml, this is the full list:
 
 <WikiTable
 title="Variable types"
 columns={[
-    { title: 'Name', field: 'name', filterPlaceholder: 'Filter by name', removable:true, resizable:true, tooltip:'How its called'},
-    { title: 'Awesomeness', field: 'awesomeness', filterPlaceholder: 'Filter by Awesomeness', tooltip:'The level of awesomeness'},
-    { title: 'Faction', field: 'faction', filterPlaceholder: 'Filter by Faction', tooltip:'Their allegiance'},
-]}
+    { title: 'Name', field: 'name', filterPlaceholder: 'Filter by name', removable:true, resizable:true, tooltip:'How it\'s called', editable:true},
+    { title: 'Description', field: 'description', filterPlaceholder: 'Filter by Description', removable:true, resizable:true, tooltip:'What it does'},
+    { title: 'Type', field: 'type', filterPlaceholder: 'Filter by Type', removable:true, resizable:true, tooltip:'The type of value it produces'},
+    { title: 'Availability', field: 'availability', filterPlaceholder: 'Filter by Availability', removable:true, resizable:true, tooltip:'When it is usable (asuming it\'s parameters are also available)'},
+    { title: 'Parameters', field: 'parameters', filterPlaceholder: 'Filter by Parameters', tooltip:<div>Variable's Parameters <br/>(ParameterType ParameterName: DefaultValue)</div>}
+]}  
 data={[
-    { name: 'Zudma', faction: 'Guthixian', awesomeness: 999},
-    { name: 'Evil Dave', faction: 'Zamorakian', awesomeness: 20 },
+    //{ name: 'Send Console Message', description: 'Guthixian', parameters: <h1>- message (String)</h1>}, --> se puede usar componentes dentro, como aca.
+    //{ name: 'Send Console Message', description: 'Sends a message to the console.', parameters: <div>message<hr/>test</div>, parameterTypes: 'String', parameterDefaults:'none'}, //ESO PERMITE HACER SUBFILAS TIPO:     { name: 'Send Console Message', description: 'Sends a message to the console.', parameters: <div>message<hr/>test</div>, parameterTypes: 'String', parameterDefaults:'none'},
+    // You can confortably write the documentation in CSV, and then just conver ti to json and paste it here to add something. https://csvjson.com/csv2json
+    { name: 'inventory of', description: 'Gets the inventory of an InventoryHolder, usually a Player.', availability:'always', parameters: 'InventoryHolder inventory holder: none'},
+    { name: 'class of full name', description: 'Gets a class by its full name each time its called. ',availability:'always',  parameters: 'String class name: none'},
 ]}
  />
